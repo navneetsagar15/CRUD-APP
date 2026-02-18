@@ -18,7 +18,7 @@ const id = params.get("id");
 
 async function getEditEmployee() {
   try {
-    let resp = await fetch(`http://localhost:3000/employees/${id}`);
+    let resp = await fetch(`https://crud-app-eyxv.onrender.com/employees/${id}`);
     let data = await resp.json();
     console.log(data);
 
@@ -68,7 +68,7 @@ employeeFormEle.addEventListener("submit", async (e) => {
   };
 
   try {
-    let resp = await fetch(`http://localhost:3000/employees/${id}`, {
+    let resp = await fetch(`https://crud-app-eyxv.onrender.com/employees/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

@@ -3,7 +3,7 @@ const employeesContainerEle = document.getElementById("employees-container");
 async function getAllEmployees() {
   try {
     // let resp = await fetch(`${import.meta.env.BASE_URL}/employees`);
-    let resp = await fetch("http://localhost:3000/employees");
+    let resp = await fetch("https://crud-app-eyxv.onrender.com/employees");
 
     let data = await resp.json();
     console.log(data);
@@ -41,11 +41,12 @@ function displayEmployees(allEmployees) {
         <button class="btn delete-btn" data-id="${emp.id}">Delete</button>
       </td>
     `;
-
+    //! APPLY CLICK EVENT IN DELETE BUTTON
     row.querySelector(".delete-btn").addEventListener("click", () => {
       handleDelete(emp.id);
     });
 
+    //! APPLY CLICK EVENT IN EDIT BUTTON
     row.querySelector(".edit-btn").addEventListener("click", () => {
       handleEdit(emp.id);
     });
@@ -107,9 +108,12 @@ function displayEmployees(allEmployees) {
 async function handleDelete(id) {
   console.log(id);
   try {
-    let resp = await fetch(`http://localhost:3000/employees/${id}`, {
-      method: "DELETE",
-    });
+    let resp = await fetch(
+      `https://crud-app-eyxv.onrender.com/employees/${id}`,
+      {
+        method: "DELETE",
+      },
+    );
     console.log(resp);
   } catch (error) {
     console.log(error);
