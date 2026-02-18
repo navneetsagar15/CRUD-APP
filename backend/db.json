@@ -1,0 +1,106 @@
+{
+  "employees": [
+    {
+      "id": "2805",
+      "firstNameEle": "John",
+      "middleNameEle": "",
+      "lastNameEle": "Doe",
+      "maritalStatusEle": "Married",
+      "dob": "2001-01-17",
+      "emailEle": "doeJohn@gmail.com",
+      "mobileEle": "9874563210",
+      "address": {
+        "streetEle": "xyz, qwerty",
+        "cityEle": "abc",
+        "stateEle": "pqr",
+        "countryEle": "UK",
+        "zipEle": "123654"
+      }
+    },
+    {
+      "id": "4216",
+      "firstNameEle": "Navneet1",
+      "middleNameEle": "",
+      "lastNameEle": "Sagar1",
+      "maritalStatusEle": "",
+      "dob": "",
+      "emailEle": "navneetsagar115@gmail.com",
+      "mobileEle": "0999733779",
+      "address": {
+        "streetEle": "Shanti Dham Colony, Melrose Bypass1",
+        "cityEle": "Aligarhh",
+        "stateEle": "Uttar Pradeshh",
+        "countryEle": "India",
+        "zipEle": "20200"
+      }
+    },
+    {
+      "id": "f05b",
+      "firstNameEle": "Navneet",
+      "middleNameEle": "",
+      "lastNameEle": "Sagar",
+      "maritalStatusEle": "",
+      "dobEle": "",
+      "emailEle": "navneetsagar15@gmail.com",
+      "mobileEle": "09997337799",
+      "address": {
+        "streetEle": "Shanti Dham Colony, Melrose Bypass",
+        "cityEle": "Aligarh",
+        "stateEle": "Uttar Pradesh",
+        "countryEle": "India",
+        "zipEle": "202001"
+      }
+    },
+    {
+      "id": "e920",
+      "firstNameEle": "Navneet",
+      "middleNameEle": "Kumar",
+      "lastNameEle": "Sagar",
+      "maritalStatusEle": "Married",
+      "dobEle": "2026-02-03",
+      "emailEle": "navneetsagar15@gmail.com",
+      "mobileEle": "09997337799",
+      "address": {
+        "streetEle": "Shanti Dham Colony, Melrose Bypass",
+        "cityEle": "Aligarh",
+        "stateEle": "Uttar Pradesh",
+        "countryEle": "India",
+        "zipEle": "202001"
+      }
+    },
+    {
+      "firstNameEle": "Disha",
+      "middleNameEle": "Kumari",
+      "lastNameEle": "Singh",
+      "maritalStatusEle": "Married",
+      "dobEle": "1990-02-02",
+      "emailEle": "dishasingh789@gmail.com",
+      "mobileEle": "9874563210",
+      "address": {
+        "streetEle": "xyz abc",
+        "cityEle": "pqr",
+        "stateEle": "KL",
+        "countryEle": "India",
+        "zipEle": "123654"
+      },
+      "id": "73c4"
+    },
+    {
+      "firstNameEle": "David",
+      "middleNameEle": "",
+      "lastNameEle": "Jone",
+      "maritalStatusEle": "Married",
+      "dobEle": "2000-02-14",
+      "emailEle": "qwertyu@yahoo.com",
+      "mobileEle": "1236547890",
+      "address": {
+        "streetEle": "qwert",
+        "cityEle": "yuiop",
+        "stateEle": "asdf",
+        "countryEle": "uiop",
+        "zipEle": "147857"
+      },
+      "id": "b14c"
+    }
+  ]
+}

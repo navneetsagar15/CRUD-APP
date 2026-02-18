@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All-Employees</title>
+    <link rel="stylesheet" href="/styles/allEmployees.css" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+
+  </head>
+  <body>
+    <!--! NAVBAR -->
+
+    <nav class="navbar-container">
+      <figure class="logo">
+        <a href="/index.html">CRUD-APP</a>
+      </figure>
+
+      <div class="nav-links">
+        <a href="/pages/createEmployee.html">Create Employee</a>
+        <a href="/pages/allEmployees.html">All Employees</a>
+      </div>
+    </nav>
+
+    <!-- <h1>All Employee</h1> -->
+     <h1 class="page-title">All Employees</h1>
+
+    <!-- <section id="employees-container"></section> -->
+
+    <section class="table-wrapper">
+      <table class="employee-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Marital Status</th>
+            <th>DOB</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="employees-container"></tbody>
+      </table>
+    </section>
+
+    <script src="/script/allEmployees.js"></script>
+  </body>
+</html>
