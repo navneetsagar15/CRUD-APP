@@ -44,7 +44,6 @@ function displayEmployees(allEmployees) {
     //! APPLY CLICK EVENT IN DELETE BUTTON
     row.querySelector(".delete-btn").addEventListener("click", () => {
       handleDelete(emp.id);
-      window.location.href = "allEmployees.html"
     });
 
     //! APPLY CLICK EVENT IN EDIT BUTTON
@@ -116,6 +115,7 @@ async function handleDelete(id) {
       },
     );
     console.log(resp);
+    window.location.href = "allEmployees.html";
   } catch (error) {
     console.log(error);
     alert("Unable to delete ❌");
