@@ -15,45 +15,40 @@ const zipEle = document.getElementById("zip");
 
 console.log(employeeFormEle);
 
-employeeFormEle.addEventListener("submit", async(e) => {
-    e.preventDefault();
-    console.log("Form Submitted");
+employeeFormEle.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  console.log("Form Submitted");
 
-    let newEmployeeData = {
-    firstNameEle : firstNameEle.value.trim(),
-    middleNameEle : middleNameEle.value.trim(),
-    lastNameEle : lastNameEle.value.trim(),
-    maritalStatusEle : maritalStatusEle.value.trim(),
-    dobEle : dobEle.value.trim(),
-    emailEle : emailEle.value.trim(),
-    mobileEle : mobileEle.value.trim(),
-    address : {
-        streetEle :streetEle.value.trim(),
-        cityEle : cityEle.value.trim(),
-        stateEle : stateEle.value.trim(),
-        countryEle :countryEle.value.trim(),
-        zipEle : zipEle.value.trim(),
-    },    
-};
-
-await fetch("https://crud-app-eyxv.onrender.com/employees",{  
-    method : "POST",
-    headers : {
-        "Content-Type": "application/json"
+  let newEmployeeData = {
+    firstNameEle: firstNameEle.value.trim(),
+    middleNameEle: middleNameEle.value.trim(),
+    lastNameEle: lastNameEle.value.trim(),
+    maritalStatusEle: maritalStatusEle.value.trim(),
+    dobEle: dobEle.value.trim(),
+    emailEle: emailEle.value.trim(),
+    mobileEle: mobileEle.value.trim(),
+    address: {
+      streetEle: streetEle.value.trim(),
+      cityEle: cityEle.value.trim(),
+      stateEle: stateEle.value.trim(),
+      countryEle: countryEle.value.trim(),
+      zipEle: zipEle.value.trim(),
     },
-    body: JSON.stringify(newEmployeeData),          // SEND EMPLOYEE DATA IN JSON-FORMAT
-    })
-    .then(res => res.json())
+  };
+
+  await fetch("https://crud-app-eyxv.onrender.com/employees", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newEmployeeData), // SEND EMPLOYEE DATA IN JSON-FORMAT
+  })
+    .then((res) => res.json())
     .then(() => {
-        alert("Employee is created Succesfully");
-        form.reset();
-        window.location.href = "allEmployees.html"
+      alert("Employee is created Succesfully");
+      employeeFormEle.reset();
+      window.location.href = "allEmployees.html";
     })
-    .catch(err => console.log(err));
-console.log(newEmployeeData);
+    .catch((err) => console.log(err));
+  console.log(newEmployeeData);
 });
-
-
-
-
-
