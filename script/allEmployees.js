@@ -46,7 +46,7 @@ function displayEmployees(allEmployees) {
       handleDelete(emp.id);
     });
 
-    //! APPLY CLICK EVENT IN EDIT BUTTON
+    //! APPLY CLICK EVENT IN EDIT BUTTON-
     row.querySelector(".edit-btn").addEventListener("click", () => {
       handleEdit(emp.id);
     });
