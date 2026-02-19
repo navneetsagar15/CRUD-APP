@@ -47,7 +47,7 @@ await fetch("https://crud-app-eyxv.onrender.com/employees",{
     .then(() => {
         alert("Employee is created Succesfully");
         form.reset();
-        window.location.href = "allEMployees.html"
+        window.location.href = "allEmployees.html"
     })
     .catch(err => console.log(err));
 console.log(newEmployeeData);

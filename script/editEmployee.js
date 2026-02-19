@@ -79,7 +79,7 @@ employeeFormEle.addEventListener("submit", async (e) => {
       .then(() => {
         alert("Employee is updated Succesfully");
         // form.reset();
-        window.location.href = "allEMployees.html";
+        window.location.href = "allEmployees.html";
       });
 
     console.log(resp);

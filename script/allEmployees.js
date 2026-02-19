@@ -117,7 +117,7 @@ async function handleDelete(id) {
     console.log(resp);
   } catch (error) {
     console.log(error);
-    alert("Unable yto delete ❌");
+    alert("Unable to delete ❌");
   }
 }
 
