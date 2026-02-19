@@ -29,7 +29,7 @@ function displayEmployees(allEmployees) {
       <td>${emp.id}</td>
       <td>${emp.firstNameEle} ${emp.middleNameEle} ${emp.lastNameEle}</td>
       <td>${emp.maritalStatusEle}</td>
-      <td>${emp.dob}</td>
+      <td>${emp.dobEle}</td>
       <td>${emp.emailEle}</td>
       <td>${emp.mobileEle}</td>
       <td>
