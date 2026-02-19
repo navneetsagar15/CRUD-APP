@@ -44,6 +44,7 @@ function displayEmployees(allEmployees) {
     //! APPLY CLICK EVENT IN DELETE BUTTON
     row.querySelector(".delete-btn").addEventListener("click", () => {
       handleDelete(emp.id);
+      window.location.href = "allEmployees.html"
     });
 
     //! APPLY CLICK EVENT IN EDIT BUTTON
